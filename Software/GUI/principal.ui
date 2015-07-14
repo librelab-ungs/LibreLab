@@ -1,0 +1,1306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Principal</class>
+ <widget class="QMainWindow" name="Principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>531</width>
+    <height>327</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>292</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>LibreLab v0.01</string>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Analógico</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>9</y>
+          <width>491</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QTabWidget" name="tabWidget">
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="canal1Tab">
+            <attribute name="title">
+             <string>Canal 1</string>
+            </attribute>
+            <widget class="QGroupBox" name="groupBox_1">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>351</width>
+               <height>111</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>Activar</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <widget class="QLabel" name="unidadLbl_1">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>60</y>
+                <width>56</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Unidad</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="unidad_1">
+              <property name="geometry">
+               <rect>
+                <x>59</x>
+                <y>55</y>
+                <width>113</width>
+                <height>27</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLabel" name="nombreLbl_1">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>30</y>
+                <width>56</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Nombre</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="nombre_1">
+              <property name="geometry">
+               <rect>
+                <x>59</x>
+                <y>25</y>
+                <width>113</width>
+                <height>27</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QGroupBox" name="calibrarBox_1">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>190</x>
+                <y>0</y>
+                <width>161</width>
+                <height>131</height>
+               </rect>
+              </property>
+              <property name="title">
+               <string>Calibrar</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+              <widget class="QLabel" name="pendienteLbl_1">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>30</y>
+                 <width>61</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Pendiente</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="pendiente_1">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>24</y>
+                 <width>91</width>
+                 <height>27</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QLabel" name="ordenadaLbl_1">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>60</y>
+                 <width>71</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Ordenada</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="ordenada_1">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>54</y>
+                 <width>91</width>
+                 <height>27</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="canal2Tab">
+            <attribute name="title">
+             <string>Canal 2</string>
+            </attribute>
+            <widget class="QGroupBox" name="groupBox_2">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>351</width>
+               <height>111</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>Activar</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <widget class="QLabel" name="unidadLbl_2">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>60</y>
+                <width>56</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Unidad</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="unidad_2">
+              <property name="geometry">
+               <rect>
+                <x>59</x>
+                <y>55</y>
+                <width>113</width>
+                <height>27</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLabel" name="nombreLbl_2">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>30</y>
+                <width>56</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Nombre</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="nombre_2">
+              <property name="geometry">
+               <rect>
+                <x>59</x>
+                <y>25</y>
+                <width>113</width>
+                <height>27</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QGroupBox" name="calibrarBox_2">
+              <property name="geometry">
+               <rect>
+                <x>190</x>
+                <y>0</y>
+                <width>161</width>
+                <height>131</height>
+               </rect>
+              </property>
+              <property name="title">
+               <string>Calibrar</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+              <widget class="QLabel" name="pendienteLbl_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>30</y>
+                 <width>61</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Pendiente</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="pendiente_2">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>24</y>
+                 <width>91</width>
+                 <height>27</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QLabel" name="ordenadaLbl_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>60</y>
+                 <width>61</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Ordenada</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="ordenada_2">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>54</y>
+                 <width>91</width>
+                 <height>27</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="canal3Tab">
+            <attribute name="title">
+             <string>Canal 3</string>
+            </attribute>
+            <widget class="QGroupBox" name="groupBox_3">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>351</width>
+               <height>111</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>Activar</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <widget class="QLabel" name="unidadLbl_3">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>60</y>
+                <width>56</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Unidad</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="unidad_3">
+              <property name="geometry">
+               <rect>
+                <x>59</x>
+                <y>55</y>
+                <width>113</width>
+                <height>27</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLabel" name="nombreLbl_3">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>30</y>
+                <width>56</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Nombre</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="nombre_3">
+              <property name="geometry">
+               <rect>
+                <x>59</x>
+                <y>25</y>
+                <width>113</width>
+                <height>27</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QGroupBox" name="calibrarBox_3">
+              <property name="geometry">
+               <rect>
+                <x>190</x>
+                <y>0</y>
+                <width>161</width>
+                <height>131</height>
+               </rect>
+              </property>
+              <property name="title">
+               <string>Calibrar</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+              <widget class="QLabel" name="pendienteLbl_3">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>30</y>
+                 <width>61</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Pendiente</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="pendiente_3">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>24</y>
+                 <width>91</width>
+                 <height>27</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QLabel" name="ordenadaLbl_3">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>60</y>
+                 <width>61</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Ordenada</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="ordenada_3">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>54</y>
+                 <width>91</width>
+                 <height>27</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="canal4Tab">
+            <attribute name="title">
+             <string>Canal 4</string>
+            </attribute>
+            <widget class="QGroupBox" name="groupBox_4">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>351</width>
+               <height>111</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>Activar</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <widget class="QLabel" name="unidadLbl_4">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>60</y>
+                <width>56</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Unidad</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="unidad_4">
+              <property name="geometry">
+               <rect>
+                <x>59</x>
+                <y>55</y>
+                <width>113</width>
+                <height>27</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLabel" name="nombreLbl_4">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>30</y>
+                <width>56</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Nombre</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="nombre_4">
+              <property name="geometry">
+               <rect>
+                <x>59</x>
+                <y>25</y>
+                <width>113</width>
+                <height>27</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QGroupBox" name="calibrarBox_4">
+              <property name="geometry">
+               <rect>
+                <x>190</x>
+                <y>0</y>
+                <width>161</width>
+                <height>131</height>
+               </rect>
+              </property>
+              <property name="title">
+               <string>Calibrar</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+              <widget class="QLabel" name="pendienteLbl_4">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>30</y>
+                 <width>61</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Pendiente</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="pendiente_4">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>24</y>
+                 <width>91</width>
+                 <height>27</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QLabel" name="ordenadaLbl_4">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>60</y>
+                 <width>61</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Ordenada</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="ordenada_4">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>54</y>
+                 <width>91</width>
+                 <height>27</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="canal5Tab">
+            <attribute name="title">
+             <string>Canal 5</string>
+            </attribute>
+            <widget class="QGroupBox" name="groupBox_5">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>351</width>
+               <height>111</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>Activar</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <widget class="QLabel" name="unidadLbl_5">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>60</y>
+                <width>56</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Unidad</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="unidad_5">
+              <property name="geometry">
+               <rect>
+                <x>59</x>
+                <y>55</y>
+                <width>113</width>
+                <height>27</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLabel" name="nombreLbl_5">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>30</y>
+                <width>56</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Nombre</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="nombre_5">
+              <property name="geometry">
+               <rect>
+                <x>59</x>
+                <y>25</y>
+                <width>113</width>
+                <height>27</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QGroupBox" name="calibrarBox_5">
+              <property name="geometry">
+               <rect>
+                <x>190</x>
+                <y>0</y>
+                <width>161</width>
+                <height>131</height>
+               </rect>
+              </property>
+              <property name="title">
+               <string>Calibrar</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+              <widget class="QLabel" name="pendienteLbl_5">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>30</y>
+                 <width>61</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Pendiente</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="pendiente_5">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>24</y>
+                 <width>91</width>
+                 <height>27</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QLabel" name="ordenadaLbl_5">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>60</y>
+                 <width>61</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Ordenada</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="ordenada_5">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>54</y>
+                 <width>91</width>
+                 <height>27</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="canal6Tab">
+            <attribute name="title">
+             <string>Canal 6</string>
+            </attribute>
+            <widget class="QGroupBox" name="groupBox_6">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>351</width>
+               <height>111</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>Activar</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <widget class="QLabel" name="unidadLbl_6">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>60</y>
+                <width>56</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Unidad</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="unidad_6">
+              <property name="geometry">
+               <rect>
+                <x>59</x>
+                <y>55</y>
+                <width>113</width>
+                <height>27</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLabel" name="nombreLbl_6">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>30</y>
+                <width>56</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Nombre</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="nombre_6">
+              <property name="geometry">
+               <rect>
+                <x>59</x>
+                <y>25</y>
+                <width>113</width>
+                <height>27</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QGroupBox" name="calibrarBox_6">
+              <property name="geometry">
+               <rect>
+                <x>190</x>
+                <y>0</y>
+                <width>161</width>
+                <height>131</height>
+               </rect>
+              </property>
+              <property name="title">
+               <string>Calibrar</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+              <widget class="QLabel" name="pendienteLbl_6">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>30</y>
+                 <width>61</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Pendiente</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="pendiente_6">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>24</y>
+                 <width>91</width>
+                 <height>27</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QLabel" name="ordenadaLbl_6">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>60</y>
+                 <width>61</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Ordenada</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="ordenada_6">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>54</y>
+                 <width>91</width>
+                 <height>27</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="canal7Tab">
+            <attribute name="title">
+             <string>Canal 7</string>
+            </attribute>
+            <widget class="QGroupBox" name="groupBox_7">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>351</width>
+               <height>111</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>Activar</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <widget class="QLabel" name="unidadLbl_7">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>60</y>
+                <width>56</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Unidad</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="unidad_7">
+              <property name="geometry">
+               <rect>
+                <x>59</x>
+                <y>55</y>
+                <width>113</width>
+                <height>27</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLabel" name="nombreLbl_7">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>30</y>
+                <width>56</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Nombre</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="nombre_7">
+              <property name="geometry">
+               <rect>
+                <x>59</x>
+                <y>25</y>
+                <width>113</width>
+                <height>27</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QGroupBox" name="calibrarBox_7">
+              <property name="geometry">
+               <rect>
+                <x>190</x>
+                <y>0</y>
+                <width>161</width>
+                <height>131</height>
+               </rect>
+              </property>
+              <property name="title">
+               <string>Calibrar</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+              <widget class="QLabel" name="pendienteLbl_7">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>30</y>
+                 <width>61</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Pendiente</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="pendiente_7">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>24</y>
+                 <width>91</width>
+                 <height>27</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QLabel" name="ordenadaLbl_7">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>60</y>
+                 <width>61</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Ordenada</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="ordenada_7">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>54</y>
+                 <width>91</width>
+                 <height>27</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="canal8Tab">
+            <attribute name="title">
+             <string>Canal 8</string>
+            </attribute>
+            <widget class="QGroupBox" name="groupBox_8">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>351</width>
+               <height>111</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>Activar</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <widget class="QLabel" name="unidadLbl_8">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>60</y>
+                <width>56</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Unidad</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="unidad_8">
+              <property name="geometry">
+               <rect>
+                <x>59</x>
+                <y>55</y>
+                <width>113</width>
+                <height>27</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLabel" name="nombreLbl_8">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>30</y>
+                <width>56</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Nombre</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="nombre_8">
+              <property name="geometry">
+               <rect>
+                <x>59</x>
+                <y>25</y>
+                <width>113</width>
+                <height>27</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QGroupBox" name="calibrarBox_8">
+              <property name="geometry">
+               <rect>
+                <x>190</x>
+                <y>0</y>
+                <width>161</width>
+                <height>131</height>
+               </rect>
+              </property>
+              <property name="title">
+               <string>Calibrar</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+              <widget class="QLabel" name="pendienteLbl_8">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>30</y>
+                 <width>61</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Pendiente</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="pendiente_8">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>24</y>
+                 <width>91</width>
+                 <height>27</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QLabel" name="ordenadaLbl_8">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>60</y>
+                 <width>61</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Ordenada</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="ordenada_8">
+               <property name="geometry">
+                <rect>
+                 <x>70</x>
+                 <y>54</y>
+                 <width>91</width>
+                 <height>27</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <zorder>tabWidget</zorder>
+       <zorder>verticalLayoutWidget</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Digital</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="frecuenciaLbl">
+        <property name="font">
+         <font>
+          <family>Noto Sans [unknown]</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Frecuencia (Hz)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="frecuenciaSpinBox">
+        <property name="decimals">
+         <number>3</number>
+        </property>
+        <property name="minimum">
+         <double>0.153000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>1000.000000000000000</double>
+        </property>
+        <property name="value">
+         <double>10.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>531</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Archivo">
+    <property name="title">
+     <string>&amp;Archivo</string>
+    </property>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menu_Experimento">
+    <property name="title">
+     <string>&amp;Experimento</string>
+    </property>
+    <addaction name="actionMedir"/>
+   </widget>
+   <widget class="QMenu" name="menuA_yuda">
+    <property name="title">
+     <string>Ay&amp;uda</string>
+    </property>
+    <addaction name="actionAyuda"/>
+    <addaction name="actionAcercaDe"/>
+   </widget>
+   <widget class="QMenu" name="menu_Ventana">
+    <property name="title">
+     <string>&amp;Ventana</string>
+    </property>
+   </widget>
+   <addaction name="menu_Archivo"/>
+   <addaction name="menu_Experimento"/>
+   <addaction name="menu_Ventana"/>
+   <addaction name="menuA_yuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::TopToolBarArea</set>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionMedir"/>
+   <addaction name="actionGuardar"/>
+   <addaction name="actionSalir"/>
+  </widget>
+  <action name="actionMedir">
+   <property name="text">
+    <string>&amp;Medir</string>
+   </property>
+   <property name="toolTip">
+    <string>Iniciar una medición</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>&amp;Salir</string>
+   </property>
+   <property name="toolTip">
+    <string>Abandona el programa</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="text">
+    <string>&amp;Guardar</string>
+   </property>
+   <property name="toolTip">
+    <string>Guardar los datos de la última medición</string>
+   </property>
+  </action>
+  <action name="actionAyuda">
+   <property name="text">
+    <string>&amp;Ayuda</string>
+   </property>
+   <property name="toolTip">
+    <string>Ayuda sobre el uso del programa</string>
+   </property>
+  </action>
+  <action name="actionAcercaDe">
+   <property name="text">
+    <string>A&amp;cerca de...</string>
+   </property>
+   <property name="toolTip">
+    <string>Información sobre el programa</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
