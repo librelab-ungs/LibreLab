@@ -1,7 +1,7 @@
-PyOpenLab
+LibreLab
 =========
 
-PyOpenLab is a free/open source software for laboratory data acquisition and analysis written in Python. 
+LibreLab is a free/open source software for laboratory data acquisition and analysis written in Python. 
 
 It aims to be a free and open source alternative to proprietary black-box solutions such as Pasco's DataStudio/Capstone and Vernier Logger Pro for teaching experimental science and engineering in high schools and universities.
 
