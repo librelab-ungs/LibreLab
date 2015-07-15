@@ -1,0 +1,153 @@
+
+COMANDOS
+
+ESC 0 --> Testeo de stacks y frame (Solo si esta habilitado en la compilación)
+
+ESC 1 --> Graba y lee un dato en la E2
+
+ESC 9 <char> --> Eco de un caracter cualquiera
+
+ESC A <Cant_canal> --> Recibe cantidad de canales analógicos: <Cant_canal> de 1 a 8
+
+ESC B <T_reg> 0D 0A --> Recibe tiempo de registro en segundos: <T_reg> de 1 a 65535
+
+ESC C <byte> --> Mide tiempo entre dos señales en un mismo pin (PinC.4, falling y rising edge) o entre dos pines (PinC.4 falling  y PinC.5 falling)
+                 <byte> -->  "0x31" para Start y Stop en PinC.4 || "0x32" para Start en PinC.4 y Stop en PinC.5
+                 Devuelve el lapso de tiempo en useg (ASCII)
+
+---->  ESC D <byte> --> Recibe el seteo del sentido de los canales digitales (1=SAL, 0=ENT)  <---- ANULADO !!!!!!!
+       Por ahora hay 4 canales digitales de entrada y 4 canales digitales de salida por hardware, por lo que no hay seteo posible.
+
+ESC H hhmmssDDMMAAAA --> Seteo de hora
+
+ESC I --> Borrado de memoria y Treg || Tiempo de registro default: 10seg
+
+ESC O <trigger> <intervalo> 0D 0A --> Modo Burst
+      Trigger: 'R'=Int0/rising edge || 'F'=Int0/falling || 'P'=PC
+      Intervalo: (1 a 65535) x 100us
+
+ESC P --> Deshabilitación de todos los Modos --> Solo escucha la RS232
+
+Esc R --> Habilita registro
+
+ESC S <byte> --> Setea las salidas de acuerdo a lo que recibe por RS232
+
+ESC T <Intervalo> 0D 0A --> Habilita transmisión de datos continuo con espaciado
+      Intervalo: (1 a 65535) x 100us
+
+ESC U <Canal> <Intervalo> 0D 0A --> Habilita transmisión de datos continuo con espaciado
+      Canal: (1 a 8) - Intervalo: (1 a 65535) x 100us
+
+ESC Z --> Reset por software del equipo
+
+ESC a --> Transmite datos de todos los canales analógicos steteados
+
+Esc b <Canal> --> Transmite el Canal Analógico Solicitado || <Canal> De 1 a 8 
+
+ESC c y devuelve <byte> --> Transmite estados de los canales digitales
+
+ESC d --> Descarga de datos binaria
+
+ESC e y devuelve los datos del equipo --> Transmite datos del equipo
+
+ESC f --> Ver lista de comandos
+
+ESC h --> Ver reloj
+
+ESC m --> Ver memoria utilizada y restante
+
+ESC t --> Trigger para Burst
+
+
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+
+RAM RELOJ DS1307
+
+Comienza en &H08 --> Rtc_m_st
+
+
+Puntero		Dir	Variable
+
+Rtc_m_st	08	Estado reloj:  ACK --> OK ||  NAK --> No seteado
+   +01		09	Pumem (HH) --> Puntero de memoria E2 (I2c)
+   +02		0A	Pumem (HL)
+   +03		0B	Pumem (LH)
+   +04		0C	Pumem (LL)
+   +05		0D	Cant_canal --> Cantidad canales analógicos
+   +06		0E	Código de inicio
+   +07		0F	Reg_flg --> Flag de registro
+   +08		10	T_reg (H) --> Tiempo de registro
+   +09		11	T_reg (L)
+   +10		12	Cant_dig --> Cantidad de canales digitales
+
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+
+CODIGOS DE INICIO
+
+&H00	Vuelta de energía
+&H01	Borrado de memoria de registro e inicialización
+&H02	Cambio tiempo de registro
+&H03	Descarga de datos
+&H04	Libre
+&H05	Cambio de hora
+&H06	Libre
+&H07	Libre
+&H08	Habilitación de registro
+&H09	Cambio cantidad de canales analógicos
+&H0A	Watchdog
+
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+
+ENCABEZADO DE ARCHIVO DE REGISTRO EN E2 (I2c)
+
+Marca (&HFF)		1 byte
+Marca (&HFF)		1 byte
+Hora			2 bytes
+Minutos			2 bytes
+Segundos		2 bytes
+Día			2 bytes
+Mes			2 bytes
+Año			4 bytes
+Tiempo de registro	2 bytes (L-H)
+Canales Analógicos	1 byte
+Canales digitales	1 byte (en F0H fijo)
+Código de inicio	1 byte
+Marca (&HFF)		1 byte
+Marca (&HFF)		1 byte
+
+
+Ejemplo para:
+
+Hora			16
+Minutos			43
+Segundos		33
+Día			11
+Mes			04
+Año			2015
+Tiempo de registro	10 seg
+Canales Analógicos	8 canales
+Canales digitales	4 entradas y 4 salidas	
+Código de inicio	Habilitación de registro
+
+FF FF 31 36 34 33 31 31 30 34 32 30 31 35 0A 00
+08 F0 08 FF FF
+
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+
+ORDEN DATOS DE REGISTRO  (2 bytes en binario por canal analógico) -->	LOW
+				                                        HIGH
+
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
